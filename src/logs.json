@@ -1,0 +1,7 @@
+[
+  { "Timestamp": "2026-10-05 10:15:00", "Level": "INFO", "Message": "System boot initiated" },
+  { "Timestamp": "2026-10-05 10:18:22", "Level": "WARNING", "Message": "Multiple failed login attempts detected" },
+  { "Timestamp": "2026-10-05 10:20:05", "Level": "CRITICAL", "Message": "SQL injection payload detected on login endpoint" },
+  { "Timestamp": "2026-10-05 10:25:11", "Level": "INFO", "Message": "Admin user logged in successfully" },
+  { "Timestamp": "2026-10-05 10:30:00", "Level": "ERROR", "Message": "Database connection timeout" }
+]
