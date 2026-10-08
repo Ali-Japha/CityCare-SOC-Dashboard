@@ -1,0 +1,19 @@
+filebeat.inputs:
+- type: filestream
+  id: citycare-logs
+  paths:
+    - /usr/share/filebeat/logs.json
+  parsers:
+    - ndjson:
+        target: ""
+        add_error_key: true
+
+output.elasticsearch:
+  hosts: ["https://es01:9200"]
+  username: "elastic"
+  password: "citycare_pass"
+  ssl.certificate_authorities: ["/usr/share/filebeat/certs/ca.crt"]
+  index: "citycare-logs"
+
+setup.ilm.enabled: false
+setup.template.enabled: false

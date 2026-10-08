@@ -1,0 +1,36 @@
+services:
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
+    container_name: es01
+    environment:
+      - node.name=es01
+      - discovery.type=single-node
+      - ELASTIC_PASSWORD=citycare_pass
+      - xpack.security.enabled=true
+      - xpack.security.http.ssl.enabled=true
+      - xpack.security.http.ssl.key=certs/es01.key
+      - xpack.security.http.ssl.certificate=certs/es01.crt
+      - xpack.security.http.ssl.certificate_authorities=certs/ca.crt
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./docker/certs:/usr/share/elasticsearch/config/certs:ro
+    networks:
+      - elastic
+
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.11.1
+    container_name: filebeat
+    user: root
+    depends_on:
+      - es01
+    volumes:
+      - ./docker/certs:/usr/share/filebeat/certs:ro
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./public/logs.json:/usr/share/filebeat/logs.json:ro
+    networks:
+      - elastic
+
+networks:
+  elastic:
+    driver: bridge
