@@ -1,3 +1,5 @@
 {"timestamp": "2026-10-07T10:00:00Z", "level": "INFO", "message": "CityCare Hospital SOC pipeline initialized successfully."}
 {"timestamp": "2026-10-07T10:01:15Z", "level": "WARN", "message": "Unauthorized login attempt detected on gateway IP 192.168.1.50."}
 {"timestamp": "2026-10-07T10:02:30Z", "level": "ERROR", "message": "Database connection timeout on primary clinical node es01."}
+{"timestamp": "2026-10-07T10:05:00Z", "level": "INFO", "message": "Firewall rules updated successfully."}
+{"timestamp": "2026-10-07T10:08:22Z", "level": "CRITICAL", "message": "Multiple failed SSH logins from external subnet."}

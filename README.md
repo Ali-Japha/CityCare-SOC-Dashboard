@@ -70,3 +70,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## CityCare SOC Pipeline (Task 2)
+
+### How to start the stack:
+1. Ensure Docker and Docker-Compose are installed.
+2. Run `sudo docker-compose up -d` in the project root.
+3. Wait 30-60 seconds for Elasticsearch to initialize and Filebeat to ship the logs.
+
+### How to verify ingestion:
+Run the following command to query the secure index and view the 5 sample logs:
+`curl -k -u elastic:citycare_pass https://localhost:9200/citycare-logs/_search?pretty`
