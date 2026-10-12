@@ -81,3 +81,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### How to verify ingestion:
 Run the following command to query the secure index and view the 5 sample logs:
 `curl -k -u elastic:citycare_pass https://localhost:9200/citycare-logs/_search?pretty`
+
+## CityCare Detection Rules (Task 3)
+
+### How to load the rules into Elasticsearch:
+The detection rules are stored as JSON in the `/rules` directory. To load them manually or via automation, use the Elasticsearch `_search` or `_watcher` APIs depending on your alerting engine. 
+
+For manual evaluation, run the provided Python test harness which automatically indexes test logs and evaluates the rules against the current index:
+`python3 test_harness.py`
