@@ -1,0 +1,16 @@
+{
+  "rule_name": "SQL Injection Pattern Detected",
+  "description": "Detects log messages containing typical SQL error strings indicating injection attempts.",
+  "mitre_attack": {
+    "tactic": "Initial Access",
+    "technique_id": "T1190"
+  },
+  "threshold": 1,
+  "timeframe": "now",
+  "query": {
+    "query_string": {
+      "query": "message:(\"SQL syntax\" OR \"syntax error\" OR \"unclosed quotation mark\")"
+    }
+  },
+  "remediation": "Identify the vulnerable endpoint parameter. Sanitize inputs and implement parameterized queries on the backend."
+}

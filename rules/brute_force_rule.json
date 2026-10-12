@@ -1,0 +1,16 @@
+{
+  "rule_name": "Multiple Failed Logins (Brute Force)",
+  "description": "Detects >5 failed logins from the same IP within 2 minutes.",
+  "mitre_attack": {
+    "tactic": "Credential Access",
+    "technique_id": "T1110"
+  },
+  "threshold": 5,
+  "timeframe": "2m",
+  "query": {
+    "match": {
+      "message": "failed login"
+    }
+  },
+  "remediation": "Investigate the source IP. If malicious, block at the perimeter firewall and force password resets for targeted accounts."
+}

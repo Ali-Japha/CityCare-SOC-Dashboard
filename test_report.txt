@@ -1,0 +1,12 @@
+CityCare Detection Validation Report
+==================================
+Rule: Multiple Failed Logins (Brute Force)
+MITRE: T1110
+Hits: 18 (Threshold: 5)
+Result: PASS
+
+Rule: SQL Injection Pattern Detected
+MITRE: T1190
+Hits: 3 (Threshold: 1)
+Result: PASS
+
