@@ -3,3 +3,18 @@
 {"timestamp": "2026-10-07T10:02:30Z", "level": "ERROR", "message": "Database connection timeout on primary clinical node es01."}
 {"timestamp": "2026-10-07T10:05:00Z", "level": "INFO", "message": "Firewall rules updated successfully."}
 {"timestamp": "2026-10-07T10:08:22Z", "level": "CRITICAL", "message": "Multiple failed SSH logins from external subnet."}
+{"timestamp": "2026-10-16T12:00:01Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:02Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:03Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:04Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:05Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:06Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:07Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:08Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:09Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:00:10Z", "level": "WARN", "message": "failed login from 10.0.0.50"}
+{"timestamp": "2026-10-16T12:05:01Z", "level": "ERROR", "message": "Database error: syntax error near 'OR 1=1'"}
+{"timestamp": "2026-10-16T12:05:02Z", "level": "ERROR", "message": "Database error: unclosed quotation mark after character string"}
+{"timestamp": "2026-10-16T12:05:03Z", "level": "ERROR", "message": "Database error: SQL syntax error near 'UNION SELECT'"}
+{"timestamp": "2026-10-16T12:05:04Z", "level": "ERROR", "message": "Database error: syntax error near '--'"}
+{"timestamp": "2026-10-16T12:05:05Z", "level": "ERROR", "message": "Database error: unclosed quotation mark"}
