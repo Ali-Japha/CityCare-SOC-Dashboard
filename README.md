@@ -89,3 +89,7 @@ The detection rules are stored as JSON in the `/rules` directory. To load them m
 
 For manual evaluation, run the provided Python test harness which automatically indexes test logs and evaluates the rules against the current index:
 `python3 test_harness.py`
+
+## Live Demo
+The CityCare SOC Dashboard is deployed live and can be accessed here:
+[citycare-soc-dashboard-production.up.railway.app](citycare-soc-dashboard-production.up.railway.app)

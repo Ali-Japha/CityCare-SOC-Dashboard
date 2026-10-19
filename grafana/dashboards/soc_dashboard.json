@@ -1,0 +1,18 @@
+{
+  "title": "CityCare SOC Dashboard",
+  "time": { "from": "now-6h", "to": "now" },
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Log Ingestion Volume",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "targets": [{ "query": "message:*", "metrics": [{"type": "count", "id": "1"}], "refId": "A" }]
+    },
+    {
+      "type": "stat",
+      "title": "Triggered Alerts (Brute Force / SQLi)",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "targets": [{ "query": "message:(\"failed login\" OR \"syntax error\")", "metrics": [{"type": "count", "id": "1"}], "refId": "A" }]
+    }
+  ]
+}
